@@ -1,3 +1,5 @@
+//Helps to auth the login process
+
 const withAuth = (req, res, next) => {
   if (!req.session.userId) {
     res.redirect("/login");
